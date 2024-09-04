@@ -1,4 +1,5 @@
 name: Continuous Integration
+
 on:
   push:
     branches: [ "main" ]
@@ -12,6 +13,7 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -39,5 +41,5 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.head_ref }}
-          repository: "lidorg-dev/drug-classification"
+          branch: main
+          repository: "RangoMLOps/Drug-Classification"

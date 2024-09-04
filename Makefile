@@ -28,9 +28,9 @@ hf-login:
 	huggingface-cli login --token $(HF)
 
 push-hub:
-	huggingface-cli upload lidorlg/Drug-Classification ./App --repo-type=space --commit-message="Sync App files"
-	huggingface-cli upload lidorlg/Drug-Classification ./Model /Model --repo-type=space --commit-message="Sync Model"
-	huggingface-cli upload lidorlg/Drug-Classification ./Results /Metrics --repo-type=space --commit-message="Sync Model"
+	huggingface-cli upload Rangolan/Drug-Classification ./App --repo-type=space --commit-message="Sync App files"
+	huggingface-cli upload Rangolan/Drug-Classification ./Model /Model --repo-type=space --commit-message="Sync Model"
+	huggingface-cli upload Rangolan/Drug-Classification ./Results /Metrics --repo-type=space --commit-message="Sync Model"
 
 deploy: hf-login push-hub
 

@@ -1,6 +1,7 @@
 install:
-	pip install --upgrade pip &&\
-		pip install -r requirements.txt
+	pip install --upgrade pip && pip install -r App/requirementss.txt &&\
+		pip install -r Drug-Classification/requirements.txt
+		
 
 format:	
 	black *.py 
